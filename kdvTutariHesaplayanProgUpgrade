@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        kdvTutariHesaplayanProgUpgrade();
+
+    }
+    
+public static void kdvTutariHesaplayanProgUpgrade(){
+        Scanner girdi = new Scanner(System.in);
+        int eldeki = girdi.nextInt();
+
+        float kdvliFiyat,kdv,kdvOran;
+        kdvOran = (float) ((eldeki < 1000) ? 0.18 : 0.08);
+        kdv = (float) (eldeki * kdvOran);
+        kdvliFiyat = eldeki + kdv;
+
+
+        System.out.println("KDV'siz Fiyat= " + eldeki);
+        System.out.println("KDV'li Fiyat= " + kdvliFiyat);
+        System.out.println("KDV tutarı= " + kdv);
+        System.out.println(kdvOran);
+
+
+    }}

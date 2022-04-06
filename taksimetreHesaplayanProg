@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        taksimetreHesaplayanProg();
+
+    }
+   public static void taksimetreHesaplayanProg() {
+        float mesafe, kmBasi, tutar, minUcret, acilisUcret;
+        Scanner girdi = new Scanner(System.in);
+
+        mesafe = girdi.nextInt();
+        kmBasi = 2.2f;
+        acilisUcret = 10f;
+
+        tutar = ((acilisUcret+kmBasi*mesafe) > 20 ) ? (acilisUcret+kmBasi*mesafe) : 20;
+
+        System.out.println(tutar);
+    }
+
+}

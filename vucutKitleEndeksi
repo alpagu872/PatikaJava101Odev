@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        vucutKitleEndeksi();
+
+    }
+ public static void vucutKitleEndeksi(){
+        Scanner girdi = new Scanner(System.in);
+        float boy,kilo,sonuc;
+        
+        boy = girdi.nextFloat();
+        kilo = girdi.nextFloat();
+
+        sonuc = kilo / (boy*boy);
+
+        System.out.println(sonuc);
+    }
+}

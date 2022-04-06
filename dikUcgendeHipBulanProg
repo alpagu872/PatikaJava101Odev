@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        dikUcgendeHipBulanProg();
+
+    }
+public static void dikUcgendeHipBulanProg(){
+        int a,b;
+        float hipotenus;
+
+        Scanner girdi = new Scanner(System.in);
+        a = girdi.nextInt();
+        b = girdi.nextInt();
+
+        hipotenus = (float) Math.sqrt((a*a) + (b*b));
+
+        double u = (a+b+hipotenus)/2;
+        double cevre =  (2*u);
+        double alan = u * (u-a) * (u-b) * (u-hipotenus);
+        System.out.println(hipotenus);
+        System.out.println(cevre);
+        System.out.println(alan);
+    }
+
+}

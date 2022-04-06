@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        manavKasaProgrami();
+
+    }
+
+ public static void manavKasaProgrami(){
+        Scanner girdi = new Scanner(System.in);
+        
+        float armutKg,elmaKg,domatesKg,muzKg,patlicanKg;
+
+        System.out.println("Armut Kaç Kilo ? ");
+        armutKg = girdi.nextFloat();
+        System.out.println("elma Kaç Kilo ? ");
+        elmaKg = girdi.nextFloat();
+        System.out.println("domates Kaç Kilo ? ");
+        domatesKg = girdi.nextFloat();
+        System.out.println("muz Kaç Kilo ? ");
+        muzKg = girdi.nextFloat();;
+        System.out.println("patlican Kaç Kilo ? ");
+        patlicanKg = girdi.nextFloat();
+
+
+        float tutar = (float) ((armutKg*2.14)+(elmaKg*3.67)+(domatesKg*1.11)+(muzKg*0.95)+(patlicanKg*5));
+        System.out.println(tutar);
+
+    }
+}

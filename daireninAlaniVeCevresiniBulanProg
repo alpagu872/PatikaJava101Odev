@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        daireninAlaniVeCevresiniBulanProg();
+
+    }
+ public static void daireninAlaniVeCevresiniBulanProg(){
+        double alinanCap, alan,cevre,merkezAciOlcusu,daireDilimAlan;
+        Scanner girdi = new Scanner(System.in);
+        alinanCap = girdi.nextDouble();
+
+        merkezAciOlcusu = girdi.nextDouble();
+
+        alan = Math.PI*(alinanCap*alinanCap);
+        cevre = 2* Math.PI *alinanCap;
+        daireDilimAlan = (Math.PI*(alinanCap*alinanCap) *merkezAciOlcusu)/360;
+
+        System.out.println("Alan= " + alan);
+        System.out.println("Çevre= " + cevre);
+        System.out.println("Daire Diliminin Alanı:" + daireDilimAlan);
+
+
+    }
+}
